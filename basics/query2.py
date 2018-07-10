@@ -7,9 +7,9 @@ cursor.execute("SELECT * FROM employee")
 print("fetchall:")
 result = cursor.fetchall() 
 for r in result:
-    print(r)
+    print(r[1])
     
-cursor.execute("SELECT * FROM employee") 
+cursor.execute("SELECT fname FROM employee") 
 print("\nfetch one:")
 res = cursor.fetchone() 
 print(res)
